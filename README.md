@@ -119,12 +119,7 @@ comandos BODY
 	 "psw":"a1b2@b3c4"
   }
 ```
-Posivel Resposta 
-´´´bash
-{
-	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ1YTUwOThkLTliMDMtNDg1ZS04YjJjLWJhYWY5N2NlMjNhMiIsIm5hbWUiOiJGdWxhbm8gZGEgU2lsdmEiLCJhdmF0YXIiOiJodHRwczovL2Nkbi1pY29ucy1wbmcuZmxhdGljb24uY29tLzEyOC8xMzI2LzEzMjYzNzcucG5nIiwiaWF0IjoxNzQ4OTc0Njc1LCJleHAiOjE3NDg5NzQ3OTV9.vgFG0X1L6rEf6qk6foxk3ivcMpoHXDOlFrD70u0CXbU"
-}
-´´´
+- Quando clicar em Sen seu Token ira aparecer
 
 Posts (GET)
 Em header adicione manualmente, Clique em + add ou no botão + e preencha assim 
