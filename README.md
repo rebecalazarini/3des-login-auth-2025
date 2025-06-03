@@ -124,8 +124,11 @@ comandos BODY
 Posts (GET)
 Em header adicione manualmente, Clique em + add ou no botão + e preencha assim 
 ´´´bash
+| Chave         | Valor                         |
+
 |---------------|-------------------------------|
 | Authorization | Bearer **cole seu token aqui** |
+
 ´´´
 
 # Importante:
@@ -136,4 +139,3 @@ Em header adicione manualmente, Clique em + add ou no botão + e preencha assim
 
 ![teste1](Captura%20de%20tela%202025-04-29%20161444.png)
 ![teste2](Captura%20de%20tela%202025-04-29%20161559.png)
-
