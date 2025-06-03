@@ -93,7 +93,16 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
  - date: data de publicação
  - views: número de visualizações
  - likes: número de curtidas
+# Routes ⤵
+## login.js ⤵
 
+ - O login.js cria uma rota que responde a requisições POST no /login, chamando a função do controlador de login.
+ -Importancia: É importante porque permite que os usuários se autentiquem no sistema, permitindo que apenas pessoas expecificadas possam acessar informações confidencias. A utilização correta do login é essencial para a segurança e integridade.
+
+## posts.js ⤵
+ - O posts.js define uma rota que responde a requisições GET no  /posts, utilizando um middleware de validação para autenticar o usuário antes de chamar a função do controlador de posts.
+ -Importancia:É importante porque assegura que apenas usuários autenticados possam acessar informações sensíveis, como posts, promovendo a segurança e a privacidade dos dados no sistema .
+  
 # Imagem Diagrama de Atividades
 ![Diagrama de Atividades](img1.png)
 
