@@ -4,11 +4,11 @@
 # Server ⤵
 Resumo Geral
 
-- ⮩ Lê variáveis do .env (com dotenv).
-- ⮩ Inicializa um servidor Express.
-- ⮩ Usa middlewares para ler JSON.
-- ⮩ Separa rotas em arquivos (login.js, posts.js).
-- ⮩ Escuta requisições HTTP na porta 3000.
+- Lê variáveis do .env (com dotenv).
+- Inicializa um servidor Express.
+- Usa middlewares para ler JSON.
+- Separa rotas em arquivos (login.js, posts.js).
+- Escuta requisições HTTP na porta 3000.
 
 # Pasta middlewares ⤵
 ## Arquivo auth.js ⤵
@@ -64,24 +64,24 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
   ```
 
 ## Possíveis usos desse data ⤵
-⮩ Criar uma rota /posts que retorne todos os posts.
-⮩ Buscar um post por id
-⮩ Ordenar os posts por data, visualizações ou curtidas.
-⮩ Exibir os posts mais populares ou mais recentes.
+- Criar uma rota /posts que retorne todos os posts.
+- Buscar um post por id
+- Ordenar os posts por data, visualizações ou curtidas.
+- Exibir os posts mais populares ou mais recentes.
 
 # Controllers ⤵
 ## login.js ⤵
-➙ Esse código define uma função Login que simula o processo de autenticação de um usuário e gera um token JWT quando o login é bem-sucedido.
-➙ jsonwebtoken: biblioteca usada para gerar e verificar tokens JWT.
-➙ crypto: módulo nativo do Node.js usado aqui para gerar um ID aleatório com randomUUID().
-➙ Payload: dados do usuário (ID aleatório, nome e avatar).
-➙ Chave secreta (process.env.SECRET_JWT): define a segurança do token.
-➙ Validade: 2 minutos (expiresIn: "2min").
-➙ Esse código:
-   ➙ Simula login com e-mail e senha fixos.
-   ➙ Gera um token JWT com ID, nome e avatar.
-   ➙ Retorna o token se o login for bem-sucedido.
-   ➙ Usa um segredo (SECRET_JWT) para assinar o token.
+ - - Esse código define uma função Login que simula o processo de autenticação de um usuário e gera um token JWT quando o login é bem-sucedido.
+ - - jsonwebtoken: biblioteca usada para gerar e verificar tokens JWT.
+ -- crypto: módulo nativo do Node.js usado aqui para gerar um ID aleatório com randomUUID().
+ - - Payload: dados do usuário (ID aleatório, nome e avatar).
+ - - Chave secreta (process.env.SECRET_JWT): define a segurança do token.
+ - - Validade: 2 minutos (expiresIn: "2min").
+ - Esse código:
+   - Simula login com e-mail e senha fixos.
+   - Gera um token JWT com ID, nome e avatar.
+   - Retorna o token se o login for bem-sucedido.
+   - Usa um segredo (SECRET_JWT) para assinar o token.
  
 ## posts.js ⤵
  Resumo ⤵
