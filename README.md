@@ -97,4 +97,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
 # Imagem Diagrama de Atividades
 ![Diagrama de Atividades](img1.png)
 
+# Testes no Insomnia
+![teste1](Captura%20de%20tela%202025-04-29%20161444.png)
+![teste2](Captura%20de%20tela%202025-04-29%20161559.png)
 
