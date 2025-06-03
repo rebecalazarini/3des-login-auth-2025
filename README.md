@@ -71,12 +71,12 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
 
 # Controllers ⤵
 ## login.js ⤵
- - - Esse código define uma função Login que simula o processo de autenticação de um usuário e gera um token JWT quando o login é bem-sucedido.
- - - jsonwebtoken: biblioteca usada para gerar e verificar tokens JWT.
- -- crypto: módulo nativo do Node.js usado aqui para gerar um ID aleatório com randomUUID().
- - - Payload: dados do usuário (ID aleatório, nome e avatar).
- - - Chave secreta (process.env.SECRET_JWT): define a segurança do token.
- - - Validade: 2 minutos (expiresIn: "2min").
+ - Esse código define uma função Login que simula o processo de autenticação de um usuário e gera um token JWT quando o login é bem-sucedido.
+ - jsonwebtoken: biblioteca usada para gerar e verificar tokens JWT.
+ - crypto: módulo nativo do Node.js usado aqui para gerar um ID aleatório com randomUUID().
+ - Payload: dados do usuário (ID aleatório, nome e avatar).
+ - Chave secreta (process.env.SECRET_JWT): define a segurança do token.
+ - Validade: 2 minutos (expiresIn: "2min").
  - Esse código:
    - Simula login com e-mail e senha fixos.
    - Gera um token JWT com ID, nome e avatar.
