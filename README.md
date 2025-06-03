@@ -104,7 +104,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
  -Importancia:É importante porque assegura que apenas usuários autenticados possam acessar informações sensíveis, como posts, promovendo a segurança e a privacidade dos dados no sistema .
   
 # Imagem Diagrama de Atividades
-![Diagrama de Atividades](img1.png)
+![Diagrama de Atividades](img7.jpg)
 
 # Testes no Insomnia
 ## Pra testar 
@@ -135,5 +135,5 @@ Em header adicione manualmente, Clique em + add ou no botão + e preencha assim
 - Não use aba "Auth" do Insomnia, use só a aba “Headers”.
 - Agora clique em Send e sua requisição deve funcionar.
 
-![teste1](Captura%20de%20tela%202025-04-29%20161444.png)
-![teste2](Captura%20de%20tela%202025-04-29%20161559.png)
+![teste1](i1.png)
+![teste2](i2.png)
