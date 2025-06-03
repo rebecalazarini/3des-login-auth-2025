@@ -11,7 +11,7 @@ Resumo Geral
 - Escuta requisições HTTP na porta 3000.
 
 # Pasta middlewares
-# Arquivo auth.js
+## Arquivo auth.js
 - Esse código é um middleware de autenticação JWT (JSON Web Token) usado em aplicações Node.js com Express. Ele verifica se a requisição tem um token válido e, se sim, permite que o usuário acesse rotas protegidas.
 - É uma função chamada validate, que verifica:
 - Se há um token JWT no cabeçalho da requisição (Authorization).
@@ -28,7 +28,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
   - Se for válido, anexa os dados do usuário e permite o acesso à rota.
 
 # Pasta data
-# posts.js
+## posts.js
 - Exporta um array chamado data, que contém uma lista de objetos representando artigos ou postagens de blog.
 - Cada objeto possui informações como título, resumo, data, número de visualizações e curtidas.
   ## O que é data?
@@ -70,7 +70,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
 - Exibir os posts mais populares ou mais recentes.
 
 # Controllers
-##login.js
+## login.js
 - Esse código define uma função Login que simula o processo de autenticação de um usuário e gera um token JWT quando o login é bem-sucedido.
 - jsonwebtoken: biblioteca usada para gerar e verificar tokens JWT.
 - crypto: módulo nativo do Node.js usado aqui para gerar um ID aleatório com randomUUID().
