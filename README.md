@@ -104,7 +104,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
  -Importancia:É importante porque assegura que apenas usuários autenticados possam acessar informações sensíveis, como posts, promovendo a segurança e a privacidade dos dados no sistema .
   
 # Imagem Diagrama de Atividades
-![Diagrama de Atividades](img7.jpg)
+![Diagrama de Atividades](img3.jpg)
 
 # Testes no Insomnia
 ## Pra testar 
