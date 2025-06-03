@@ -10,7 +10,7 @@ Resumo Geral
 - Separa rotas em arquivos (login.js, posts.js).
 - Escuta requisições HTTP na porta 3000.
 
- Pasta middlewares
+# Pasta middlewares
 # Arquivo auth.js
 - Esse código é um middleware de autenticação JWT (JSON Web Token) usado em aplicações Node.js com Express. Ele verifica se a requisição tem um token válido e, se sim, permite que o usuário acesse rotas protegidas.
 - É uma função chamada validate, que verifica:
