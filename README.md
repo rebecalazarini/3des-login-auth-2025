@@ -93,5 +93,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
  - views: número de visualizações
  - likes: número de curtidas
 
+# Imagem Diagrama de Atividades
+![Diagrama de Atividades](img1.png)
 
 
