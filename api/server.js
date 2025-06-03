@@ -15,7 +15,7 @@ app.use(loginRoutes);
 app.use(postsRoutes);
 
 //Objetivo: Inicia o servidor na porta definida (3000 neste caso).
-O console.log confirma no terminal que o servidor está rodando.
+//O console.log confirma no terminal que o servidor está rodando.
 app.listen(port, () => {
     console.log('listening on ' + port);
 })
