@@ -107,6 +107,38 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
 ![Diagrama de Atividades](img1.png)
 
 # Testes no Insomnia
+## Pra testar 
+- No login (POST)
+```bash
+http://localhost:3000/login
+```
+comandos BODY
+```bash
+{
+   "user":"usuario@gmail.com",
+	 "psw":"a1b2@b3c4"
+  }
+```
+Posivel Resposta 
+´´´bash
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ1YTUwOThkLTliMDMtNDg1ZS04YjJjLWJhYWY5N2NlMjNhMiIsIm5hbWUiOiJGdWxhbm8gZGEgU2lsdmEiLCJhdmF0YXIiOiJodHRwczovL2Nkbi1pY29ucy1wbmcuZmxhdGljb24uY29tLzEyOC8xMzI2LzEzMjYzNzcucG5nIiwiaWF0IjoxNzQ4OTc0Njc1LCJleHAiOjE3NDg5NzQ3OTV9.vgFG0X1L6rEf6qk6foxk3ivcMpoHXDOlFrD70u0CXbU"
+}
+´´´
+
+Posts (GET)
+Em header adicione manualmente, Clique em + add ou no botão + e preencha assim 
+´´´bash
+| ------------- | ------------------------------ |
+| Authorization | Bearer **cole seu token aqui** |
+´´´
+
+# Importante:
+- Deve ser Bearer + espaço + token.
+- Não coloque aspas no valor.
+- Não use aba "Auth" do Insomnia, use só a aba “Headers”.
+- Agora clique em Send e sua requisição deve funcionar.
+
 ![teste1](Captura%20de%20tela%202025-04-29%20161444.png)
 ![teste2](Captura%20de%20tela%202025-04-29%20161559.png)
 
