@@ -1,7 +1,7 @@
 # Login - auth
 ## Explicação do código.
 
-# Server
+# Server ⤵
 Resumo Geral
 
 - Lê variáveis do .env (com dotenv).
@@ -10,8 +10,8 @@ Resumo Geral
 - Separa rotas em arquivos (login.js, posts.js).
 - Escuta requisições HTTP na porta 3000.
 
-# Pasta middlewares
-## Arquivo auth.js
+# Pasta middlewares ⤵
+## Arquivo auth.js ⤵
 - Esse código é um middleware de autenticação JWT (JSON Web Token) usado em aplicações Node.js com Express. Ele verifica se a requisição tem um token válido e, se sim, permite que o usuário acesse rotas protegidas.
 - É uma função chamada validate, que verifica:
 - Se há um token JWT no cabeçalho da requisição (Authorization).
@@ -27,8 +27,8 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
   - Rejeita a requisição se o token estiver ausente ou inválido.
   - Se for válido, anexa os dados do usuário e permite o acesso à rota.
 
-# Pasta data
-## posts.js
+# Pasta data ⤵
+## posts.js ⤵
 - Exporta um array chamado data, que contém uma lista de objetos representando artigos ou postagens de blog.
 - Cada objeto possui informações como título, resumo, data, número de visualizações e curtidas.
   ## O que é data?
@@ -44,7 +44,7 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
     }
   ```
 
-  ## Exemplo de item no array
+  ## Exemplo de item no array ⤵
  ```bash
   {
   "id": 3,
@@ -63,14 +63,14 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
   console.log(posts[0].title); // "Como ser mais produtivo em 2025"
   ```
 
-## Possíveis usos desse data
+## Possíveis usos desse data ⤵
 - Criar uma rota /posts que retorne todos os posts.
 - Buscar um post por id
 - Ordenar os posts por data, visualizações ou curtidas.
 - Exibir os posts mais populares ou mais recentes.
 
-# Controllers
-## login.js
+# Controllers ⤵
+## login.js ⤵
 - Esse código define uma função Login que simula o processo de autenticação de um usuário e gera um token JWT quando o login é bem-sucedido.
 - jsonwebtoken: biblioteca usada para gerar e verificar tokens JWT.
 - crypto: módulo nativo do Node.js usado aqui para gerar um ID aleatório com randomUUID().
@@ -83,8 +83,8 @@ jsonwebtoken.verify(token, secret) → para verificar um token.
    - Retorna o token se o login for bem-sucedido.
    - Usa um segredo (SECRET_JWT) para assinar o token.
  
-## posts.js
- Resumo
+## posts.js ⤵
+ Resumo ⤵
  - Esse arquivo contém um array de objetos representando posts de blog ou artigos. Cada post tem informações como:
  - id: identificador único (número)
  - title: título do post
