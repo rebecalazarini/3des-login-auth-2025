@@ -8,7 +8,7 @@ Status 200 (OK);
 O conteúdo da variável dataPosts como corpo da resposta;
 E finaliza a resposta com .end().*/
 const posts = (req, res) => {
-    res.status(200).send(dataPosts).end();
+    res.status(200).json(dataPosts).end();
 }//Torna a função posts disponível para ser usada em outros arquivos (por exemplo, nas rotas).
 module.exports = {
     posts

@@ -10,7 +10,7 @@ const Login = (req, res) => {
     try {
         //Validação simples, comparando com valores fixos (não busca em banco de dados).
         // Se o e-mail ou senha estiverem errados, retorna erro 401 Unauthorized.
-        const correctPassword = ((user === "usuario@gmail.com") && (psw === "a1b2@b3c4"));
+        const correctPassword = ((user === process.env.USER) && (psw === process.env.PASSSWD));
 
         if(!correctPassword) res.status(401).send({message:'E-mail or Password incorrect !'});
 
