@@ -3,7 +3,7 @@ async function verificarToken() {
 
   if (!token) {
     alert("Token não encontrado. Faça login novamente.");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     return;
   }
 

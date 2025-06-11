@@ -31,6 +31,8 @@ async function carregarPosts() {
       const card = document.createElement("div");
       card.className = "post-card";
       card.innerHTML = `
+         <img src="${post.avatar}" alt="Avatar" class="avatar">
+        <span class="user-name">${post.name}</span>
         <h2>${post.title}</h2>
         <p><strong>Data:</strong> ${post.date}</p>
         <p>${post.summary}</p>
@@ -41,8 +43,8 @@ async function carregarPosts() {
     });
   } catch (error) {
     alert("Erro ao carregar posts: " + error.message);
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
-
 carregarPosts();
+
