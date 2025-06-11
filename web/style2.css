@@ -10,3 +10,13 @@ body {
   margin-bottom: 15px;
   border-radius: 5px;
 }
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #000000;
+    color: white;
+    cursor: pointer;
+}
