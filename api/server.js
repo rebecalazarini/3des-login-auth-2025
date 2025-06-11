@@ -1,7 +1,9 @@
 require("dotenv").config(); //Carrega variáveis de ambiente do arquivo .env para process.env.
 const express = require('express'); //Objetivo: Importa o framework Express, que facilita a criação de servidores web e APIs RESTful em Node.js.
+const cors = require('cors');
 const app = express(); // Objetivo: Inicializa o aplicativo Express. app é a instância principal que será usada para definir rotas, middlewares e iniciar o servidor.
 
+app.use(cors());
 const port = 4000; //Define a porta na qual o servidor irá escutar. 
 
 const loginRoutes = require('./src/routes/login'); //Objetivo: Importa dois arquivos de rotas personalizadas:

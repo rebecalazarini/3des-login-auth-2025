@@ -10,9 +10,9 @@ const Login = (req, res) => {
     try {
         //Validação simples, comparando com valores fixos (não busca em banco de dados).
         // Se o e-mail ou senha estiverem errados, retorna erro 401 Unauthorized.
-        const correctPassword = ((user === process.env.USER) && (psw === process.env.PASSSWD));
+        const correctPassword = ((user === process.env.USER) && (psw === process.env.PASSWD));
 
-        if(!correctPassword) res.status(401).send({message:'E-mail or Password incorrect !'});
+        if(!correctPassword) return res.status(401).send({message:'E-mail ou senha incorretos !'});
 
         /*Gera um token assinado com:
 Payload: dados do usuário (ID aleatório, nome e avatar).
@@ -28,15 +28,11 @@ Validade: 2 minutos (expiresIn: "2min").*/
             { expiresIn: "2min" }
         );
 
-        //Envia o token como resposta em JSON.
-        // O .end() finaliza a resposta.
-        res.status(200).json({ token : token }).end();
+        return res.status(200).json({ token : token });
     }catch(err) {
         //Em caso de erro inesperado (ex: variável mal definida, falha na geração do token), retorna erro 500.
-        res.status(500).send(err).end();
+        return res.status(500).send(err);
     }
-    
-    res.status(200).end();
 };
 
 module.exports = {
