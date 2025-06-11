@@ -137,3 +137,19 @@ Em header adicione manualmente, Clique em + add ou no botão + e preencha assim
 
 ![teste1](i1.png)
 ![teste2](i2.png)
+
+# Para testar no front 
+- Coloque o back end pra funcionar
+```bash
+cd api
+npm install
+npm i cors
+npx nodemon
+```
+
+- No front
+- Usuario certo:
+```bash
+email: usuario@gmail.com
+senha: senha123
+```
