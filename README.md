@@ -116,7 +116,7 @@ comandos BODY
 ```bash
 {
    "user":"usuario@gmail.com",
-	 "psw":"a1b2@b3c4"
+	 "psw":"senha123"
   }
 ```
 - Quando clicar em Sen seu Token ira aparecer
