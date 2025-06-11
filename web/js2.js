@@ -23,7 +23,7 @@ async function verificarToken() {
   } catch (error) {
     alert("Token inválido ou expirado. Faça login novamente.");
     localStorage.removeItem("token");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
